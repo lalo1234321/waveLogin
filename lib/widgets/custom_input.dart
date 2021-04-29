@@ -32,7 +32,7 @@ class CustomInput extends StatelessWidget {
       ),
       cursorColor: Colors.blue,
       decoration: InputDecoration(
-        labelText: hintText,
+        hintText: hintText,
         prefixIcon: Icon(
           prefixIconData,
           size:18,

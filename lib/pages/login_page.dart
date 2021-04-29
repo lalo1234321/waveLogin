@@ -8,15 +8,15 @@ import 'package:provider/provider.dart';
 
 
 class LoginPage extends StatelessWidget {
-  
+  final emailCtl = TextEditingController();
+  final passCtl = TextEditingController();
   @override
   Widget build(BuildContext context) {
     final model = Provider.of<HomeView>(context);
     final size = MediaQuery.of(context).size;
     // para saber si el keyboard está abierto
     final bool keyBoardOpen = MediaQuery.of(context).viewInsets.bottom > 0;
-    final emailCtl = TextEditingController();
-    final passCtl = TextEditingController();
+    
 
 
     return Scaffold(
